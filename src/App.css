@@ -1,0 +1,114 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+.cardBal {
+  padding: 2em;
+  background-color: rgba(54, 255, 114, 0.3);
+  border-radius: 15px;
+  border:1px solid rgba(54, 255, 114, 1);
+  color:rgba(54, 255, 114, 1);
+}
+
+.card{
+  padding: 1em;
+  background-color: rgba(54, 255, 114, 0.2);
+  border-radius: 15px;
+  border:1px solid rgba(54, 255, 114, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card div{
+  padding: 2em;
+  color:rgba(54, 255, 114, 1);
+}
+.card div input,select,textarea{
+  background-color: rgba(54, 255, 114, 0.2);
+  border-radius: 15px;
+  border:1px solid rgba(54, 255, 114, 1);
+  color:black;
+}
+.submitBtn{
+  background-color: rgba(54, 255, 114, 0.2);
+  border-radius: 15px;
+  border:1px solid rgba(54, 255, 114, 1);
+}
+
+ul{
+  display: flex;
+  flex-direction: column-reverse;
+  text-decoration: none;
+  list-style: none;
+
+}
+.income {
+  border: 1px solid rgb(54, 195, 255);
+  background-color: rgba(54, 195, 255, 0.2);
+}
+
+.expense {
+  border: 1px solid rgba(255, 6, 54, 1);
+  background-color: rgba(255, 6, 54, 0.2);
+}
+
+ul li{
+  background-color: rgba(54, 255, 114, 0.2);
+  border-radius: 15px;
+  border:1px solid rgba(54, 255, 114, 1);
+  height: max-content;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-areas: 
+  "type date"
+  "topic amount"
+  "notes category";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-column-gap: 10%;
+}
+.type{
+  grid-area: type;
+  padding: 0;
+  margin:0;
+  
+}
+.dt{
+  grid-area: date;
+  padding: 0;
+  margin:0;
+}
+.topic{
+  grid-area: topic;
+  padding: 0;
+  margin: 0;
+  margin-left:10px;
+  text-align: left;
+}
+.amount{
+  grid-area:amount;
+  padding: 0;
+  margin:0;
+  margin-right: 10px;
+  text-align: right;
+}
+.nt{
+  grid-area: notes;
+  padding: 0;
+  margin:0;
+  margin-left:10px;
+  text-align: left;
+}
+.category{
+  grid-area: category;
+  padding: 0;
+  margin:0;
+  margin-right: 10px;
+  text-align: right;
+}
