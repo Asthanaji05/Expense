@@ -37,7 +37,7 @@ function App() {
 
     // Clear the form fields after submission
     setTransaction({
-      type: "income",
+      type: "Income",
       topic: "",
       amount: 0,
       category: "",
